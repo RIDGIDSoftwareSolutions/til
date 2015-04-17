@@ -3,5 +3,5 @@ Today I learned how to write unit tests using Kiwi.
 The BDD method of writing unit tests is really attractive to me 
 because they are VERY easy to read and understand.
 
-I also learned how to do all of my source control from the terminal 
-as well as this text file was written in Vim!
+I also learned how to do all of my source control from the terminal. 
+Also, this text file was written in Vim!
