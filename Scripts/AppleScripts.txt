@@ -1,0 +1,19 @@
+Today I learned some basic AppleScript writing.
+
+I wrote a script to reset the simulator every time it is run.
+
+If you want to reset the simulator every time you run your app, put this script in the schemes Run pre-actions
+ 
+ Set Shell to: /usr/bin/osascript
+  
+  tell application "iOS Simulator"
+  activate
+    tell application "System Events"
+	    tell process "iOS Simulator"
+		    click menu item "Reset Content and Settings…" of menu "iOS Simulator" of menu bar 1
+			 tell window 1
+		        click button "Reset"
+		     end tell
+	      end tell
+	   end tell
+	end tell
